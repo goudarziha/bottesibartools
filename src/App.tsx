@@ -1,6 +1,5 @@
 import "./App.css";
 import Botessi from "./assets/bottesi-landing.jpg";
-import { IconBrandInstagram } from "@tabler/icons-react";
 
 function App() {
   const centerDivStyle = {
