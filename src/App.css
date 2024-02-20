@@ -1,0 +1,33 @@
+#root {
+  /* height: 100%; */
+  /* width: 100%; */
+  /* max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center; */
+  height: 100%;
+  margin: 0;
+  background-color: #0a0a0a;
+  overflow-y: hidden;
+  overflow: hidden;
+}
+
+.container {
+  margin: 20px;
+  overflow-y: hidden;
+  overflow: hidden;
+  display: flex;
+  border: 1px solid #0a0a0a;
+  padding: 20px;
+  position: relative;
+  width: 400px;
+}
+
+.center {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
