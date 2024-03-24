@@ -1,5 +1,13 @@
+@font-face {
+  font-family: "K22-Monastic";
+  src: local("K22-Montastic"),
+    url("./fonts/K22-Monastic.ttf") format("truetype");
+  font-weight: bold;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "K22-Montastic", Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
   /* line-height: 1.5;
   font-weight: 400; */
 
