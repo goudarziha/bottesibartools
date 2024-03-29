@@ -1,41 +1,31 @@
+import { Center, Container, Image, Stack, Text } from "@mantine/core";
 import "./App.css";
 import Botessi from "./assets/bottesi-landing.jpg";
 
 function App() {
-  const centerDivStyle = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "100vh",
-    overflow: "hidden",
-    color: "white",
-  };
-  const textStyle = {
-    margin: "10px",
-  };
+  const TextComponent = ({ children }: { children: React.ReactNode }) => (
+    <Text size="md" style={{ color: "white" }}>
+      {children}
+    </Text>
+  );
   return (
-    <div>
-      <div style={centerDivStyle}>
-        <img src={Botessi} alt="botes" width="500" />
-        <div>
-          <div style={textStyle}>
-            <span>Coming Soon...</span>
-          </div>
-          <div style={textStyle}>
-            <span>
-              We are tirelessly working to get our operations off the ground
-              here in New Orleans
-            </span>
-          </div>
-          <div style={textStyle}>
-            <span>Depp in our incantations.</span>
-          </div>
-          <div style={textStyle}>
-            <span>Thank you for your patience, love and support</span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Container>
+      <Center>
+        <Stack>
+          <Image src={Botessi} alt="botes" h={200} fit="contain" />
+
+          <TextComponent>Coming Soon...</TextComponent>
+          <TextComponent>
+            We are tirelessly working to get our operations off the ground here
+            in New Orleans
+          </TextComponent>
+          <TextComponent>Deep in our incantations.</TextComponent>
+          <TextComponent>
+            Thank you for your patience, love and support
+          </TextComponent>
+        </Stack>
+      </Center>
+    </Container>
   );
 }
 export default App;
